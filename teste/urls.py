@@ -7,7 +7,7 @@ router = routers.DefaultRouter()
 router.register(r'especies', views.EspecieViewSet)
 
 urlpatterns = [
-    url(r'^', include(router.urls)),
-    url(r'^especies/', include('especies.urls')),
+    url(r'^api/', include(router.urls)),
     url(r'^admin/', admin.site.urls),
+    url(r'^$', views.index),
 ]
