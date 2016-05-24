@@ -5,6 +5,7 @@ import datetime
 from django.db import models
 from django.utils import timezone
 
+
 @python_2_unicode_compatible
 class Especie(models.Model):
     nomeCientifico = models.CharField(max_length=200)
@@ -15,7 +16,7 @@ class Especie(models.Model):
     classe = models.CharField(max_length=100)
     familia = models.CharField(max_length=100)
     nomeAutor = models.CharField(max_length=100)
-    
+
     nenhum = 'nenhum'
     arbustiva = 'arbustiva'
     arborea = 'arborea'

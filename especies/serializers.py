@@ -6,14 +6,14 @@ class EspecieSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Especie
         fields = (
-        	'nomeCientifico',
-        	'genero',
-        	'especie',
-        	'nomePopular',
-        	'exotica',
-        	'classe',
-        	'familia',
-        	'nomeAutor',
-        	'tipo',
-			'dataCadastro'
+            'nomeCientifico',
+            'genero',
+            'especie',
+            'nomePopular',
+            'exotica',
+            'classe',
+            'familia',
+            'nomeAutor',
+            'tipo',
+            'dataCadastro'
         )

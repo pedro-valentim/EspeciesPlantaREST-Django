@@ -8,6 +8,6 @@ router.register(r'especies', views.EspecieViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
-	url(r'^especies/', include('especies.urls')),
+    url(r'^especies/', include('especies.urls')),
     url(r'^admin/', admin.site.urls),
 ]
